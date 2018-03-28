@@ -1,0 +1,651 @@
+/*
+Puruple color #8e44ad - #703688
+*/
+
+/*/ ------------------------------------------- /*/
+/*/ BASIC SETUP /*/
+/*/ ------------------------------------------- /*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color:#393939;
+    background-color: #fcf0ff;
+    
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+section {
+    padding: 80px 0;
+    
+}
+.box {
+    padding: 1%;
+}
+
+/*/ ------------------------------------------- /*/
+/*/ HEADINGS /*/
+/*/ ------------------------------------------- /*/
+
+h1,h2,h3 {
+    text-transform: uppercase;
+}
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    
+}
+
+h2{ 
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
+}
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.navigation-bar{
+    float: right;
+    display: inline-block;
+    margin: 10px auto;
+}
+.navigation-bar li{
+    list-style: none;
+    float: left;
+    margin: 15px 20px;
+    font-size: 120%;
+    
+    }
+
+
+.navigation-bar li a:link,
+.navigation-bar li a:visited{ 
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    transition: 0.5s;
+    
+}
+
+.navigation-bar li a:hover,
+.navigation-bar li a:active{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    color: #c193d5;
+    
+    
+    
+    
+}
+
+#logo {
+    height: 100px;
+    margin-top: 20px;
+    float: left;
+    
+}
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.74),rgba(49, 0, 64, 0.4)), url(Resources/img/Hero2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: relative;
+    margin-top: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.main-text {
+    font-size: 300%;
+    margin-bottom: 10%;
+}
+
+/*/ ------------------------------------------- /*/
+/*/ BUTTONS /*/
+/*/ ------------------------------------------- /*/
+
+
+.btn-full:link,
+.btn-full:visited{
+
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #8e44ad;
+    padding: 15px;
+    margin-right: 15px;
+    border-radius: 50px;
+    background-color: #8e44ad;
+    transition: 0.5s;
+
+}
+
+.btn-full:hover,
+.btn-full:active{
+
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 15px;
+    margin-right: 15px;
+    border-radius: 50px;
+    background-color: #703688;
+    transition: 0.5s;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+     display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 15px;
+    margin-right: 15px;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+     display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 15px;
+    margin-right: 15px;
+    border-radius: 50px;
+    background-color: #703688;
+    transition: 0.5s;
+}
+/*/ ------------------------------------------- /*/
+/*/ SECTION-FEATURES/*/
+/*/ ------------------------------------------- /*/
+
+
+
+.feautres {
+    display: block;
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    text-align:inherit;
+
+    
+}
+.section-features {
+    background-image: linear-gradient(to right, #fff,rgba(173, 68, 169, 0.22));
+}
+.icon {
+    display: block;
+    color: #703688;
+    font-size: 200%;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.features-title {
+    display: block;
+    padding: 20px;
+    border-bottom: 3px solid #703688;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+    
+}
+/*/ ------------------------------------------- /*/
+/*/ SECTION-PUZZLE-SHOWCASE/*/
+/*/ ------------------------------------------- /*/
+
+
+.image-showcase {
+    padding: 0;
+    
+    
+}
+.puzzle-showcase {
+    width: 100%;
+    list-style: none;
+    
+    
+}
+
+
+.puzzle-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    
+}
+.puzzle-img {
+    width: 100%;
+    margin:0;
+    background-color: #000;
+    overflow: hidden;
+    
+}
+
+.puzzle-img img{
+    width: 100%;
+    height: 50%;
+    transform: scale(1.25);
+    opacity: 0.6;
+    transition: transform 2s;
+    transition: opacity 2s;
+    z-index: 91;
+    position: relative;
+}
+.puzzle-img img:hover{
+   transform: scale(1.03);
+    transition: transform 2s, opacity 2s;
+    opacity: 0.99;
+    z-index: 91;
+}
+/*/ ------------------this button need to get fixed - real selector is without z, btn-photo "z"--------- <figure class="btn-photo">Instagram</figure>--in html put this--------- /*/
+.btn-photoz {
+    text-decoration: none;
+    display: inline-block;
+    position:absolute;
+    color: aquamarine;
+    border: 2px solid aquamarine;
+    z-index: 93;
+}
+
+.clearfix {zoom:1}
+.clearfix:after{
+    content:'.';
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*/ ------------------------------------------- /*/
+/*/ SECTION-STEPS/*/
+/*/ ------------------------------------------- /*/
+
+.work-steps {
+    background-color: #fff;
+    margin-top: 440px;
+   
+}
+
+
+
+.steps-h2 {
+    margin-bottom: 80px;
+    display: block;
+    padding: 20px;
+    border-bottom: 3px solid #703688;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.imgapp {
+    width: 50%;
+    float: right;
+    margin-right: 5%;
+}
+.step-box {
+    display: inline-block;
+    border: 2px solid #8e44ad;
+    border-radius: 50%;
+    padding: 5px 14px;
+    color: #8e44ad;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+.step-text {
+    margin-bottom:15%;
+   
+}
+
+.step-box:first-child {
+    margin-top: 60px;
+}
+.step-text:first-of-type{
+     margin-top: 60px;
+}
+
+
+.btn-apple:hover, 
+.btn-apple:active {
+    opacity: 0.6;
+}
+.btn-android {
+    height: 40px;
+    width: 130px;
+}
+.btn-android:hover,
+.btn-android:active {
+    opacity: 0.6;
+}
+
+/*/ ------------------------------------------- /*/
+/*/ SECTION-PLANS/*/
+/*/ ------------------------------------------- /*/
+
+.puzzle-plans {
+    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.33),rgba(0, 0, 0, 0.35)) ,url(Resources/img/Hero3.jpg);
+    background-attachment: fixed;
+    background-position:top;
+    background-size: cover;
+    
+}
+
+
+.price-box h3 {
+    text-align: left;
+    font-size: 120%;
+}
+.puzzle-plans h2 {
+    color: #fff;
+     margin-bottom: 60px;
+    display: block;
+    padding: 20px;
+    border: 3px solid #f0cbff;
+    border-radius: 50px;
+    background: #6d2b79;
+    opacity: 0.8;
+   
+}
+.price-box {
+    text-align: left;
+    display: block;
+    border: 1px solid #703688;
+    padding: 15px;
+    background-color: #f8e7ff;
+   
+}
+
+.features-box {
+    text-align: left;
+    display: block;
+    border: 1px solid #703688;
+    border-top: transparent;
+    padding: 10px;
+    background-color: #f4d8ff;
+   
+}
+.sign-up-box {
+     text-align: center;
+    display: block;
+    border: 1px solid #703688;
+    padding: 15px;
+    background-color: #f8e7ff;
+    border-top: transparent;
+}
+.price-big {
+    
+color: #703688;
+    font-weight: 100;
+    font-size: 300%;
+    margin-bottom: 20px;
+}
+.price-big span {
+    font-size: 40%;
+}
+
+
+.btn-signup:link,
+.btn-signup:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #703688;
+    border-radius: 50px;
+    transition: 0.5s;
+    
+}
+.btn-signup:hover,
+.btn-signup:active {
+    color: #f4d8ff;
+    background-color:  #703688;
+    transition: 0.5s;
+}
+
+.icon-small {
+    color:#8e44ad;
+    display: inline-block;
+    margin:10px 15px 5px 15px;
+    font-size: 140%;
+    
+}
+/*/ ------------------------------------------- /*/
+/*/ SECTION-cities/*/
+/*/ ------------------------------------------- /*/
+
+.section-city-showcase {
+    background-color: #fff;
+}
+.features-img {
+    width: 100%;
+    margin:2%;
+    padding: 10%;
+    background-color: #ffffff;
+    overflow: hidden;
+    
+}
+.city-features {
+    text-align: center;
+}
+
+.section-city-showcase h2 {
+    margin-bottom: 80px;
+    display: block;
+    padding: 20px 20px 40px 20px;
+    border-bottom: 3px solid #703688;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+/*/ ------------------------------------------- /*/
+/*/ SECTION-TESTEMONIALS/*/
+/*/ ------------------------------------------- /*/
+
+.section-testemonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.51),rgba(0, 0, 0, 0.45)),url(Resources/img/puz3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+}
+
+
+.section-testemonials h2 {
+    margin-bottom: 80px;
+    display: block;
+    padding: 20px 20px 40px 20px;
+    border-bottom: 3px solid #703688;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #fff;
+}
+.section-testemonials i {
+    margin-left: -20px;
+}
+
+.customer-test {
+    color: #fff;
+    padding: 20px;
+    font-size: 110%;
+    text-align: left;
+}
+.cust-img {
+    display: block;
+    border-radius: 50%;
+    width: 25%;
+    margin-top: 20px;
+}
+
+/*/ ------------------------------------------- /*/
+/*/ SECTION-CONTACT-FORM/*/
+/*/ ------------------------------------------- /*/
+
+
+input, select {
+    width: 80%;
+    height: 35px;
+}
+textarea {
+    width:80%;
+    height: 60px;
+}
+#newsletter {
+   width: 40px;
+    height: 25px;
+    
+}
+.section-form h2 {
+    margin-bottom: 80px;
+    display: block;
+    padding: 20px 20px 40px 20px;
+    border-bottom: 3px solid #703688;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+}
+
+
+label {
+    font-size: 120%;
+}
+
+.btn-send {
+    background-color: #8e44ad;
+    border: 1px solid #8e44ad;
+    border-radius: 50px;
+    color:#fff;
+    transition: 0.5s;
+}
+.btn-send:link,
+.btn-send:visited {
+    background-color: #8e44ad;
+    border: 1px solid #8e44ad;
+    border-radius: 50px;
+    color:#fff;
+    transition: 0.5s;
+}
+.btn-send:hover,
+.btn-send:active {
+    background-color: #703688;
+    border: 2px solid #703688;
+    border-radius: 50px;
+    color:#fff;
+    transition: 0.5s;
+}
+
+/*/ ------------------------------------------- /*/
+/*/ SECTION-FOOTER/*/
+/*/ ------------------------------------------- /*/
+
+footer {
+    background-color: #242424;
+    
+   
+    
+    
+}
+.legal-pages a{
+    color: #a7a7a7;
+    text-decoration: none;
+    margin: 10px 7px;
+}
+p {
+    text-align: center;
+    margin-top: 35px;
+
+}
+.social-icons i {
+    display: inline-block;
+    margin: 0 5px;
+    font-size:160%;
+    color: #a7a7a7;
+    transition: 0.5s;
+  
+}
+.social-icons {
+    padding-left: 25%;
+}
+
+.legal-pages a:hover,
+.legal-pages a:active {
+    color: #fff;
+}
+.fb:hover,
+.fb:active {
+    color:#3b5998;
+    transition: 0.5s;
+}
+.twitter:hover,
+.twitter:active {
+    color:#00aced;
+    transition: 0.5s;
+}
+.insta:hover,
+.insta:active {
+    color:#517fa4;
+    transition: 0.5s;
+}
+.pint:hover,
+.pint:active {
+    color:#cb2027;
+    transition: 0.5s;
+}
+.snap:hover,
+.snap:active {
+    color:#FFFA37;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

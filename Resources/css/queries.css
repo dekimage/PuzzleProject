@@ -1,0 +1,188 @@
+/*/ --SMALL PHONES from 0 to 480px--/*/ 
+
+@media only screen and (max-width:480px)
+{
+nav { margin: 20px 20px;
+    }
+    .main-text {
+        text-align: center;
+        font-size: 200%;
+        
+        
+    }
+    #logo {
+        height: 50px;
+    }
+    
+    .hero-text-box a {
+        display: inline-block;
+        margin-bottom: 10%;
+        text-align: center;
+        margin-left: 30px;
+    }
+    header {
+        height: 100vh;
+    }
+    .navigation-bar {
+        font-size: 80%;
+    }
+    .section-features {
+       padding: 0;
+    }
+    
+    .puzzle-showcase li {
+    
+    width: 100%;
+    
+}
+    .imgapp {
+    width: 50%;
+    float: right;
+    margin-right: 25%;
+}
+    
+    .step-box {
+        margin-left: 5%;
+    }
+    .btn-apple {
+        margin-left: 5%;
+    }
+    .btn-android {
+        margin-right: 5px;
+        margin-left: 5%;
+        
+    }
+    .price-box,
+    .features-box,
+    .sign-up-box {
+        margin: 0 5%;
+        
+    }
+    .features-box p {
+        margin: 2px;
+        padding: 2px;
+        text-align: left;
+    }
+    
+    .whole-box:first-child{
+        margin-bottom: 20px;
+    }
+    .whole-box:last-child{
+        margin-top: 20px;
+    }
+    
+    
+    .icon-small {
+       padding-left: 2%;
+    }
+    
+    
+    .section-form div {
+        margin-left: 10px;
+        padding: 2%;
+    }
+    
+    .legal-pages a{
+        display: block;
+        padding-left: 10px;
+        width: 40%;
+        
+    
+        
+    }
+    footer p{
+        padding: 5px 5px;
+    }
+    .legal-pages {
+        margin-bottom: 30px;
+    }
+    }
+    
+
+/*/ --TABLETS from 481px to 767px--/*/ 
+@media only screen and (max-width:767px) {
+    
+    
+    .navigation-bar {
+        margin: 0;
+        float: inherit;
+    }
+    .hero-text-box {
+        margin-top: 5%;
+    }
+    .main-text {
+        font-size: 250%;
+    }
+    .navigation-bar {
+        font-size: 85%;
+    }
+     #logo {
+        height: 60px;
+    }
+    .btn-full{
+        margin-bottom: 10px;
+    }
+
+     
+    .puzzle-showcase li {
+    
+    width: 50%;
+        
+    
+}
+    .image-showcase {
+        padding-top: 31%;
+    }
+
+
+    .social-icons {
+        padding-left: 9%;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .legal-pages {
+        margin-left: 2%;
+    }
+    .contact-form{
+        margin-left: 2%;
+    }
+        
+.
+
+    .price-big {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+    
+    
